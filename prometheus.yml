@@ -9,3 +9,9 @@ scrape_configs:
     static_configs:
       - targets:
         - node-exporter:9100
+  - job_name: sample-app
+    static_configs:
+      - targets:
+        - sample-app-1:8080
+        - sample-app-2:8080
+        - sample-app-3:8080
