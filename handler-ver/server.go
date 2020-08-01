@@ -71,9 +71,9 @@ func main() {
 		switch {
 		case 0 <= v && v < 60:
 			return okHandler(c)
-		case 60 <= v && v < 80:
+		case 60 <= v && v < 85:
 			return notFoundHandler(c)
-		case 80 <= v && v < 100:
+		case 85 <= v && v < 100:
 			return serviceUnavailableHandler(c)
 		default:
 			panic("system error")
